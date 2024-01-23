@@ -15,7 +15,8 @@ function onInput(e) {
 
 }
 function create () {
-  createBoxes(amount) 
+  createBoxes(amount);
+  amount = 0;
 }
 
 function createBoxes(amount) {
@@ -26,7 +27,6 @@ function createBoxes(amount) {
   boxes.insertAdjacentHTML("beforeend", box.join(""));
   box = [];
   input.value = "";
-  console.log(boxes)
 }
 
 
